@@ -1,21 +1,31 @@
 import React from "react";
 import Image from "next/image";
-import Img1 from "../public/assets/2st.png";
+import Img2 from "../public/assets/first.png";
 
 export const Motivation = () => {
   return (
-    <div>
+    <div id="motivation">
       <div className="relative">
-        <Image src={Img1} className="w-4/5 px-10" alt="/" />
-        <div className="absolute top-0 right-0 pt-36 px-48 flex items-center justify-center text-white text-4xl md:text-2xl">
-          <p className="px-48 text-center tracking-widest leading-loose font-quicksand">
-            Gamify Your <br />
-            Programmer&#39;s,
-            <br /> Fitness Journey
+        <Image
+          src={Img2}
+          className="ml-72"
+          width={1005}
+          height={676}
+          alt="mot"
+        />
+        <div className="absolute bottom-56 left-0 right-2/4 h-64 flex items-center justify-center text-white text-4xl sm:text-3xl md:text-2xl lg:text-xl xl:text-2xl sm:block">
+          <p className="capitalize tracking-widest leading-loose text-center">
+            Programmers keep the
+            <br />
+            world running smoothly,
+            <br />
+            but their own health is at
+            <br /> risk due to sedentary
+            <br />
+            lifestyles.
           </p>
         </div>
       </div>
-      <div></div>
     </div>
   );
 };

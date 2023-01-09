@@ -75,19 +75,13 @@ const Navbar = () => {
               <Link href="/">Home</Link>
             </li>
             <li className="ml-10 text-sm uppercase hover:border-b">
-              <Link href="/#about">About</Link>
+              <Link href="/#motivation">Motivation</Link>
             </li>
             <li className="ml-10 text-sm uppercase hover:border-b">
-              <Link href="/#skills">Skills</Link>
+              <Link href="/#how">How it works</Link>
             </li>
             <li className="ml-10 text-sm uppercase hover:border-b">
-              <Link href="/#projects">Projects</Link>
-            </li>
-            <li className="ml-10 text-sm uppercase hover:border-b">
-              <Link href="/resume">Resume</Link>
-            </li>
-            <li className="ml-10 text-sm uppercase hover:border-b">
-              <Link href="/#contact">Contact</Link>
+              <Link href="/#joinus">Join Us</Link>
             </li>
           </ul>
           {/* Hamburger Icon */}
@@ -96,7 +90,7 @@ const Navbar = () => {
             onClick={handleNav}
             className="md:hidden"
           >
-            <AiOutlineMenu size={25} />
+            <AiOutlineMenu className="text-white" size={25} />
           </div>
         </div>
       </div>
@@ -112,7 +106,7 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? " fixed right-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
+              ? " fixed right-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] text-black p-10 ease-in duration-500"
               : "fixed right-[-100%] top-0 p-10 ease-in duration-500"
           }
         >
@@ -146,33 +140,23 @@ const Navbar = () => {
                   Home
                 </li>
               </Link>
-              <Link href="/#about">
+              <Link href="/#motivation">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  About
+                  Motivation
                 </li>
               </Link>
-              <Link href="/#skills">
+              <Link href="/#how">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  Skills
+                  How it works
                 </li>
               </Link>
-              <Link href="/#projects">
+              <Link href="/#joinus">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  Projects
-                </li>
-              </Link>
-              <Link href="/resume">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  Resume
-                </li>
-              </Link>
-              <Link href="/#contact">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  Contact
+                  Join Us
                 </li>
               </Link>
             </ul>
-            <div className="pt-40">
+            {/* <div className="pt-40">
               <p className="uppercase tracking-widest text-[#5651e5]">
                 Let&#39;s Connect
               </p>
@@ -212,7 +196,7 @@ const Navbar = () => {
                   </div>
                 </Link>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
