@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Img1 from "../public/assets/2st extract.png";
+import Img1 from "../public/assets/2st.png";
 
 export const Motivation = () => {
   return (

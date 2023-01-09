@@ -5,7 +5,14 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      transform: {
+        "-flip-h": "scaleX(-1)",
+      },
+    },
+  },
+  variants: {
+    transform: ["responsive", "hover", "focus"],
   },
   plugins: [],
 };
